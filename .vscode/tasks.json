@@ -88,15 +88,17 @@
                 "args": [
                     "-I",
                     "${workspaceFolder}\\include",
-                    "${workspaceFolder}\\src\\main.cpp",
+                    "${workspaceFolder}\\src\\renderer.cpp",
                     "-o",
-                    "${workspaceFolder}\\wasm\\main.wasm",
+                    "${workspaceFolder}\\wasm\\renderer.wasm",
                     "-O3",
                     "-s",
                     "WASM=1",
                     "--no-entry",  // 不编译main函数
                     "-s",
-                    "ALLOW_MEMORY_GROWTH=1"  // 可变内存
+                    "TOTAL_MEMORY=268435456",  // 最大内存256M
+                    // "-s",
+                    // "ALLOW_MEMORY_GROWTH=1"  // 可变内存
                 ]
             },
             "problemMatcher": []

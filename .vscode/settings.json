@@ -75,7 +75,9 @@
         "map": "cpp",
         "numeric": "cpp",
         "cinttypes": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "list": "cpp",
+        "forward_list": "cpp"
     },
     "cmake.configureOnOpen": false
 }
